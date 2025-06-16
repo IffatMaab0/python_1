@@ -5,4 +5,4 @@ def fibbo(n):
         return 1
     return fibbo(n-1)+fibbo(n-2)
 a=int(input())    
-print("the term at the given position is: ", fibbo(a))            
+print("the term at the position is: ", fibbo(a))            

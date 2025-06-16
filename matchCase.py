@@ -1,4 +1,4 @@
-x=int(input("enter a number: " ))
+x=int(input("enter a number from (1-7): " ))
 match x:
       case 1:
            print("its monday")
