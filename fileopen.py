@@ -17,6 +17,6 @@ while True:
     m3=line.split(",")[2]
     print(f"the marks of student {i} in maths is: {m1}")   
     print(f"the marks of student {i} in english is: {m2}") 
-    print(f"the marks of student {i} in PS is: {m3}")
+    print(f"the marks of student {i} in PS is: {m3}" )
 
     
