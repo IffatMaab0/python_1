@@ -1,3 +1,8 @@
+
+# Author: Iffat Maab
+# Date: 2025-06-16
+# Description: A two-player Python console game where players take turns to mark spaces in a 3×3 grid to win.
+
 def sum(a,b,c):
     return a+b+c
 def printBoard(xstate,ystate):

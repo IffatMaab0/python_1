@@ -1,3 +1,8 @@
+
+# Author: Iffat Maab
+# Date: 2025-06-12
+# Description: A console-based system to add, remove, display, and return books using object-oriented programming.
+
 class library:
     def __init__(self):
         self.books =["Python Basics", "C++ Fundamentals","Data Structures"]

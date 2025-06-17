@@ -1,3 +1,8 @@
+
+# Author: Iffat Maab
+# Date: 2025-06-13
+# Description: A simple Python console game where the user competes against the computer using random choices.
+
 import random
 
 # Function to check who wins

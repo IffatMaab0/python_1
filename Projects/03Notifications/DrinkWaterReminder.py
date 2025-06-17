@@ -17,6 +17,11 @@
     #####using os module#### 
 
 
+# Author: Iffat Maab
+# Date: 2025-06-13
+# Description: Sends a system popup notification every 30 minutes to remind the user to drink water.
+
+
 import os
 import time
 
