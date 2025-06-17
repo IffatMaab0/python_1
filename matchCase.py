@@ -1,4 +1,4 @@
-x=int(input("enter a number from (1-7): " ))
+x=int(input("enter a number from (1-7): " ))    #converting input to integer as input is always as str
 match x:
       case 1:
            print("its monday")
@@ -14,5 +14,5 @@ match x:
            print("its saturday")
       case 7:
            print("its sunday")
-      case _ if(x<1 and x >7): 
+      case _ if(x<1 and x >7):     
            print("Enter a Valid Number!")
