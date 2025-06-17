@@ -1,4 +1,4 @@
-class Grandfather:
+class Grandfather:            
     def farm(self):
         print("I owe a farm.")
 
@@ -12,6 +12,6 @@ class Daughter(Father):
 
 # Use it
 s = Daughter()
-s.farm()
-s.car()   
+s.farm()       #inherited from first parent    
+s.car()        
 s.laptop() 
