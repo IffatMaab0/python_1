@@ -1,6 +1,7 @@
 # import time
 # import plyer
 
+# Function to display reminder using system message
 # def remind_to_drink():
 #     plyer.notification.notify(
 #         title = "Drink Water Reminder",
@@ -10,7 +11,7 @@
 
 # while True:
 #     remind_to_drink()
-#     time.sleep(3600) 
+#     time.sleep(3600)    # Sleep for 1800 seconds (30 minutes)
 
 
     #####using os module#### 
@@ -24,4 +25,4 @@ def remind_to_drink():
 
 while True:
     remind_to_drink()
-    time.sleep(1800) 
+    time.sleep(1800)          # Sleep for 1800 seconds (30 minutes)
