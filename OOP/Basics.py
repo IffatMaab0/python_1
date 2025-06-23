@@ -12,15 +12,15 @@ class student:
         print("you are welcome!") 
 
 
-    def avg_score(self):                      #method to calculate and display average
+    def avg_score(self):                      
         sum = 0
         for value in self.marks:
             sum = sum + value
         print(f"{self.name}, your average score is {sum/3}")   
          
 
-s1 = student("Leo", [97, 89, 91] )              #object created
+s1 = student("Leo", [97, 89, 91] )             
 s1.welcome()
-s1.avg_score()                           #method called of stdent class
+s1.avg_score()                           
 s2 = student("Maab", [87, 91, 98] )
 s2.avg_score()

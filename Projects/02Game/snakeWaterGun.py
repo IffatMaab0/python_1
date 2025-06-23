@@ -1,6 +1,4 @@
 
-# Author: Iffat Maab
-# Date: 2025-06-13
 # Description: A simple Python console game where the user competes against the computer using random choices.
 
 import random
@@ -24,11 +22,11 @@ if(user<0 and user> 2):
     exit(0)
 # Computer randomly chooses
 comp = random.randint(0,2)
+
 #Show Choice
 print("you choose > ", user)
 print("Machine choose > ", comp)
 
-# Decide result
 score= check(comp,user)
 if(score==0):
     print("its Draw!")
