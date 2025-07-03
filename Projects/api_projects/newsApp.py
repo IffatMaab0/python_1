@@ -1,22 +1,27 @@
 
-# Author: Maab
-# Date: 2025-06-15
 # Description: Fetches and displays the latest news articles based on user input using NewsAPI.
 
 
-import requests       # For sending HTTP requests to the API
+import requests       
+import json  
+import os
+from dotenv import load_dotenv
 
-import json            # For working with JSON response data
+load_dotenv()    
+api_key = os.getenv("NEWS_API_KEY")      
 query=input("What type of info you are interested in: ")
-url=f"https://newsapi.org/v2/everything?q={query}&from=2025-05-16&sortBy=publishedAt&apiKey=da9e0dcf5a0f41c8a788d9987b2d6930"
+url=f"https://newsapi.org/v2/everything?q={query}&from=2025-05-16&sortBy=publishedAt&apiKey={api_key}"
 
-# Send GET request to the News API
+print("API Key:", api_key)  
+
 r=requests.get(url)
 
 # Convert JSON response text into a Python dictionary
 news=json.loads(r.text)
+print(json.dumps(news, indent=4))
+
 
 for article in news["articles"]:
-    print (article["title"])               #print article
-    print(article["description"])            #print short summary
-    print("-------------------------")       #for formatting 
+    print (article["title"])               
+    print(article["description"])            
+    print("-------------------------")       
