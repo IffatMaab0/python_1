@@ -20,6 +20,7 @@ user = int(input("choose '0' for Snake, '1' for water and '2' for Gun > "))
 if(user<0 and user> 2):
     print("Invalid Choice!")
     exit(0)
+    
 # Computer randomly chooses
 comp = random.randint(0,2)
 

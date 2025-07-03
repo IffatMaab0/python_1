@@ -1,3 +1,6 @@
+## This Python script uses the pyttsx3 library to collect a list of names from user input and then provides a spoken "shoutout" for each name using text-to-speech.
+  ## provides a spoken "shoutout" for each name using text-to-speech.
+  
 import pyttsx3 as py
 
 names = []

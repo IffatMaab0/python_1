@@ -1,6 +1,6 @@
 
 # Description: A simple Python script to convert PKR to selected foreign currencies 
-#              using exchange rates from a text file.
+        ##   using exchange rates from a text file.
 
 
 with open('CurrencyRate.txt') as file:   
@@ -13,7 +13,7 @@ for line in lines:
    parsed= line.split("\t")
    CurrDict[parsed [0]]= parsed[1]
 
-# Get amount in PKR from user   
+## amount in PKR  
 amount=int(input("Enter amount:"))
 
 
