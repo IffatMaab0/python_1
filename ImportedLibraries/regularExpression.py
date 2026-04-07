@@ -1,6 +1,5 @@
 import re         
 
-
 text = "I am learning Python and sometimes it is very hard to grab and sometimes some concepts are very easy to digest"
 
 pattern = r"very\s+\w+"
