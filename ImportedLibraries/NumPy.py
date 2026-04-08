@@ -14,13 +14,24 @@ import numpy as np
 ### indexing -->1 elementat a time;  Slicing-->multiple items at a time
 a1 = np.arange(10)
 a2 = np.arange(12).reshape(3,4)
-a3 = np.arange(8).reshape(2,2,2)
+# a3 = np.arange(8).reshape(2,2,2)
 
 # print(a2[2,3])
 # print(a3[0,0,1])    #0 ->first array; 0-> first row of that array; 1->second column
 
 # print(a1[2:5])  #from 2-4
-print(a2)
+# print(a2)
 # print(a2[0:2,1:3])
 # print(a2[0::2, 0::3])  #-->> corners
-print(a2[0::2, 1::2])
+# print(a2[0::2, 1::2])
+# print(a2[1, 0::3])
+# print(a2[0:2, 1:])
+
+# a3 = np.arange(27).reshape(3,3,3)
+# print(a3)
+# print("slicing")
+# print(a3[1,:,: ])     #a3[1]
+# print(a3[::2])
+# print(a3[0,1])
+# print(a3[2, 1:, 1:])
+# print(a3[0::2, 0, 0::2])
