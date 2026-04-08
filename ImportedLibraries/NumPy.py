@@ -1,8 +1,21 @@
 import numpy as np
-a1 = np.arange(0,12).reshape(3,4)
-a2 = np.arange(4,28,2).reshape(3,4)
-print(a1, a2, sep="\n")
-#must be of same shape
-a3=a1+a2
-print(a3)
+# a1 = np.arange(0,12).reshape(3,4)
+# a2 = np.arange(4,28,2).reshape(3,4)
+# print(a1, a2, sep="\n")
+# #must be of same shape
+# a3=a1+a2
+# print(a3)
+
+###numpy functions -->log exponent trignomatry dot product
+# np.round(np.random.random((2,3))*100)
+# np.floor(np.random.random((2,3))*100)
+# np.ceil(np.random.random((2,3))*100)
+
+### indexing and slicing
+a1 = np.arange(10)
+a2 = np.arange(12).reshape(3,4)
+a3 = np.arange(8).reshape(2,2,2)
+
+print(a2[2,3])
+print(a3[0,0,1])    #0 ->first array; 0-> first row of that array; 1->second column
 
