@@ -36,24 +36,50 @@ import numpy as np
 # print(a3[2, 1:, 1:])
 # print(a3[0::2, 0, 0::2])
 
-#iterating
+### iterating
 # a1 = np.arange(10)
 # a2 = np.arange(12).reshape(3,4)
 # a3 = np.arange(27).reshape(3,3,3)
 # for i in np.nditer(a3):       #if not used it will print 1d array and then 2nd and then 3rd
 #     print (i)                   #nditer first convert to 1d array
 
-#Reshaping(transpose, ravel)
+### Reshaping(transpose, ravel)
 # a2 = np.arange(12).reshape(3,4)
 # print(a2)
 # print (np.ravel(a2))   #-->convert to 1d array
 
-#Stacking                         #shape must be same
+### Stacking                         #shape must be same
 # a4 = np.arange(12).reshape(3,4)
 # a5= np.arange(12,24).reshape(3,4)
 # a6 =np.hstack((a5,a4))
 # print(a6)
 
-#Splitting   must be equal
+#Splitting must be equal
 # print(np.hsplit(a4, 2))
-# print(np.vsplit(a4,3))   #each part is stilld array
+# print(np.vsplit(a4,3))   #each part is still same dimension array as before
+
+
+### NumpyArray Vs PythonLists 
+          #Speed & Convenience
+# import time          
+# a= [i for i in range(10000000)]
+# b=[i for i in range(10000000,20000000)] 
+# c =[]
+# start = time.time()
+# for i in range(len(a)):
+#     c.append(a[i]+ b[i])   
+# timeTaken= time.time() - start 
+# print ("TimeTaken by Lists: ", timeTaken)      
+
+# d= np.arange(10000000)
+# e = np.arange(10000000,20000000)
+# start2 = time.time()
+# c= d+e
+# timeTaken2= time.time() - start2
+# print("TimeTaken by numpy: ", timeTaken2)
+        #Memory
+# import sys        
+# a = np.arange(1000000, dtype= np.int32)   
+# print(sys.getsizeof(a))     
+
+### Advance/Fancy Indexing  -->when unable to build pattern
