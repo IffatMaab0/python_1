@@ -1,5 +1,5 @@
 
-## Description : Password Generator in Python
+
 
 import string          
 import random          
