@@ -5,4 +5,17 @@ describes how NumPy treats arrays with different shapes during arithmetic operat
  (ii) Match Sizes: If the size of each dimension of the two arrays does not match, any dimension with a size of 1 is stretched to match the corresponding dimension of the other array.
  (iii) Validation: If in any dimension the sizes do not match and neither is 1, then the arrays cannot be broadcast together, and NumPy will raise an error.
 
+ -->> used in vectorization and avoid loops
+
+ --> Mean Squared Error:
+ Mean Squared Error (MSE) is a metric that measures the average squared difference between estimated values and the actual value in a dataset, commonly used to evaluate regression models
+
+
+desmos  graph
+
+
+ --> Binary Cross Entropy:
+
+
+
 

@@ -100,3 +100,62 @@ import numpy as np
 # print(a[(a>50) & (a%2==0)])
 # #--> find all divisible of 7
 # print(a[a%7 ==0])      #for not divisible print(~(a[a%7 ==0]))
+
+### Broadcasting
+# a= np.arange(12).reshape(3,4)
+# b= np.arange(3)
+# print(a+b)   --> for (4,3)
+# print(a+b)  
+# a= np.arange(3).reshape(3,1)
+# b= np.arange(3,6).reshape(1,3)
+# print(a+b)
+# a= np.arange(3).reshape(1,3)
+# b= np.arange(4).reshape(4,1)
+# print(a+b)
+# a= np.arange(16).reshape(4,4)
+# b= np.arange(4).reshape(2,2)
+# print(a+b)
+
+### working with mathematical formulas
+# --> Sigmoid
+# def sigmoid(array):
+#     return 1/(1+ np.exp(-(array)))
+# a= np.arange(100)
+# print(sigmoid(10))
+# -->Mean Squared Error
+# actual = np.random.randint(1,50,25)
+# predicted = np.random.randint(1,50,25)
+# def mse(actual,predicted):
+#     return np.mean((actual-predicted)**2)
+# print(mse(actual,predicted))
+
+### Working with missing values np.nan
+# a = np.array([1,2,3,4,5,np.nan, 7])
+# print(a)
+# print(np.isnan(a))  #-->bolean array
+# print(a[~np.isnan(a)])
+
+### plotting Graph
+import matplotlib.pyplot as plt
+  # -> plotting 2d graph
+#--> x=y
+x= np.linspace(-10, 10, 100)  
+# y = x                            #shape of x and y must be same
+
+
+# plt.plot(x,y)
+# plt.show()
+#-->y = x**2
+# y = x**2
+# plt.plot(x,y)
+# plt.show()
+#-->y=sin(x)
+# y = np.sin(x)
+# plt.plot(x,y)
+# plt.show()
+# --> y = xlog(x)
+# y = x * (np.log(x))
+# plt.plot(x,y)
+# plt.show()
+#    plotting scatter plot
+
