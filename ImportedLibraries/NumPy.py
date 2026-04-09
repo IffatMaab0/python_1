@@ -82,4 +82,21 @@ import numpy as np
 # a = np.arange(1000000, dtype= np.int32)   
 # print(sys.getsizeof(a))     
 
-### Advance/Fancy Indexing  -->when unable to build pattern
+### Advance/Fancy Indexing  -->when unable to build pattern via normal indexing
+# a = np.arange(24).reshape(6,4)
+# print(a[[0,2,3,5]])
+# print(a[[0,1,3,4]])
+# print(a[:, [0,1,3,4]])  ---> for columns
+
+
+    ###BoleanIndexing   --> for specific output
+# a = np.random.randint(1,100,24).reshape(6,4) 
+# print(a) 
+#--> find numb greater than 50
+# print(a[a>50])
+#-->find even numb
+# print(a[a%2 ==0])
+# #--> even and greater than 50
+# print(a[(a>50) & (a%2==0)])
+# #--> find all divisible of 7
+# print(a[a%7 ==0])      #for not divisible print(~(a[a%7 ==0]))

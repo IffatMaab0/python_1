@@ -1,0 +1,8 @@
+--> Broadcasting:
+describes how NumPy treats arrays with different shapes during arithmetic operations. The smaller array is "broadcast" across the larger array so that they have compatible shapes
+--> Rules:
+ (i) Equalize Dimensions: If the two arrays do not have the same number of dimensions, prepend the shape of the smaller array with 1s until both arrays have the same number of dimensions.
+ (ii) Match Sizes: If the size of each dimension of the two arrays does not match, any dimension with a size of 1 is stretched to match the corresponding dimension of the other array.
+ (iii) Validation: If in any dimension the sizes do not match and neither is 1, then the arrays cannot be broadcast together, and NumPy will raise an error.
+
+
