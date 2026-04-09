@@ -136,15 +136,15 @@ import numpy as np
 # print(a[~np.isnan(a)])
 
 ### plotting Graph
-import matplotlib.pyplot as plt
-  # -> plotting 2d graph
-#--> x=y
-x= np.linspace(-10, 10, 100)  
-# y = x                            #shape of x and y must be same
+# import matplotlib.pyplot as plt
+#   # -> plotting 2d graph
+# #--> x=y
+# x= np.linspace(-10, 10, 100)  
+# # y = x                            #shape of x and y must be same
 
 
-# plt.plot(x,y)
-# plt.show()
+# plt.plot(x,y)           # we have to use linspace otherwise the point s on graph would 
+# plt.show()               # be problematic
 #-->y = x**2
 # y = x**2
 # plt.plot(x,y)
