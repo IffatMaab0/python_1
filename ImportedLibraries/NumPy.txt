@@ -13,7 +13,6 @@ describes how NumPy treats arrays with different shapes during arithmetic operat
 
 desmos  graph
 
-
  --> Binary Cross Entropy:
 
 
