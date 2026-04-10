@@ -140,7 +140,7 @@ import numpy as np
 #   # -> plotting 2d graph
 # #--> x=y
 # x= np.linspace(-10, 10, 100)  
-# # y = x                            #shape of x and y must be same
+# # y = x                            ##shape of x and y must be same
 
 
 # plt.plot(x,y)           # we have to use linspace otherwise the point s on graph would 
