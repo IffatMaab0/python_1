@@ -11,7 +11,7 @@ describes how NumPy treats arrays with different shapes during arithmetic operat
  Mean Squared Error (MSE) is a metric that measures the average squared difference between estimated values and the actual value in a dataset, commonly used to evaluate regression models
 
 
-desmos  graph
+(desmos  graph)
 
  --> Binary Cross Entropy:
 
