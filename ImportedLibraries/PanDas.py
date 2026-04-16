@@ -17,12 +17,12 @@ import pandas as pd
 # dict_series = pd.Series(marks)
 
 # csv reading
-mov = pd.read_csv(r"C:\Users\City Computer\Desktop\VS\python\ImportedLibraries\bollywood.csv")
-mov = mov.squeeze()
-vk = pd.read_csv(r"C:\Users\City Computer\Desktop\VS\python\ImportedLibraries\kohli_ipl (1).csv")
-vk= vk.squeeze()
-sub = pd.read_csv(r"C:\Users\City Computer\Desktop\VS\python\ImportedLibraries\subs.csv")
-sub = sub.squeeze()
+# mov = pd.read_csv(r"C:\Users\City Computer\Desktop\VS\python\ImportedLibraries\bollywood.csv")
+# mov = mov.squeeze()
+# vk = pd.read_csv(r"C:\Users\City Computer\Desktop\VS\python\ImportedLibraries\kohli_ipl (1).csv")
+# vk= vk.squeeze()
+# sub = pd.read_csv(r"C:\Users\City Computer\Desktop\VS\python\ImportedLibraries\subs.csv")
+# sub = sub.squeeze()
 # print(sub)
 
 # print(sub.head(3))
@@ -34,8 +34,13 @@ sub = sub.squeeze()
 
 ### Series with python functionalities
 # print(len(sub))     #len, size , sorted(give output in list), min, max relational
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 # plt.plot(sub)
 # plt.show()
-mov.value_counts("lead").head(20).plot(kind="bar")
-plt.show()
+# mov.value_counts("lead").head(20).plot(kind="bar")
+# plt.show()
+
+###DATAFRAMES
+
+
+
