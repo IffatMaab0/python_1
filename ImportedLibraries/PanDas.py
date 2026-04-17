@@ -34,7 +34,7 @@ import pandas as pd
 
 ### Series with python functionalities
 # print(len(sub))     #len, size , sorted(give output in list), min, max relational
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 # plt.plot(sub)
 # plt.show()
 # mov.value_counts("lead").head(20).plot(kind="bar")
@@ -95,5 +95,21 @@ student.set_index('name', inplace=True)
 # print(movies[cnd1 & cnd2 ].shape[0])
 
 #->6 write a function that can return the track record of 2 teams against each other
-def match1(mch1):
-    ipl[]
+# def match(team1, team2):
+#     matches = ipl[
+#         ((ipl['Team1'] ==  team1) & (ipl['Team2'] == team2))|
+#         ((ipl['Team2'] == team1) & (ipl['Team2'] == team1))
+#     ].sum()
+#     team1_wins = (matches['WinningTeam'] == team1).sum()
+#     team2_wins =(matches['WinningTeam'] == team2).sum()
+#     print(team1, ':' ,team1_wins)
+#     print(team2, ':' , team2_wins)
+
+#     print("Total Matches", matches)
+# match('Gujarat Titans', 'Rajasthan Royals')
+
+#1-> find player which won most player of match in finals and qualifier
+# ipl[~ipl['MatchNumber'].str.isdigit()]['Player_of_Match'].value_counts
+#->2 toss decision
+# ipl['TossDecision'].value_counts().plot(kind='pie')
+# plt.show()
