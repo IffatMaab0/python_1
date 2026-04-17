@@ -70,13 +70,30 @@ student.set_index('name', inplace=True)
 # print(movies.iloc[0:3,0:3])
 
 ###filtering DataFrame
-#1-find all final winners
+#1->find all final winners
 # val = ipl['MatchNumber'] =='Final'
 # print(val)
 # new_df= ipl[val]
 # print(new_df)
 # print(new_df[['Season','WinningTeam']])
 #print(ipl[ipl['MatchNumber']=='Final'])[['Season','WinningTeam']] -->single line
-#2-
+#2->how many superover finishes occur
+# print(ipl[ipl['SuperOver'] =="Y"].shape[0])
+# print((ipl['SuperOver'] =="Y").sum())
 
+#3->how many matches csk won in  kolkata
+# print(ipl[(ipl['City']=='Kolkata') & (ipl['WinningTeam'] == 'Chennai Super Kings')].shape[0])
 
+#4-> match winner is toss winner in percentage
+# print(((ipl[ipl['TossWinner'] == ipl['WinningTeam']].shape[0])/ipl.shape[0])*100)
+#->movies with greater than 8 rating and votes >10000
+# print(movies[(movies['imdb_rating'] > 8) & (movies['imdb_votes']> 10000)])
+
+#->5action movies with rating higher than 7.5
+# cnd1 = movies['imdb_rating']> 7.5
+# cnd2 = movies['genres'].str.split('|') .apply(lambda x:'Action' in x)  #str.contains('Action') 
+# print(movies[cnd1 & cnd2 ].shape[0])
+
+#->6 write a function that can return the track record of 2 teams against each other
+def match1(mch1):
+    ipl[]
