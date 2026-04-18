@@ -135,5 +135,5 @@ movies = pd.read_csv(r'C:\Users\City Computer\Desktop\VS\python\ImportedLibrarie
 
 #looping on groups
 genres = movies.groupby('Genre')
-for groups, data in genres:
+for groups, data in genres
     print(type(groups), type(data))
