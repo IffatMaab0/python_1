@@ -41,14 +41,14 @@ import matplotlib.pyplot as plt
 # plt.show()
 
 ###DATAFRAMES
-movies= pd.read_csv(r"C:\Users\City Computer\Desktop\VS\python\ImportedLibraries\movies.csv")
-ipl = pd.read_csv(r"C:\Users\City Computer\Desktop\VS\python\ImportedLibraries\ipl-matches.csv")
-student_dict = {'name':['a','b','c','d','e','f'],
-                'iq':[100,80,120,70,0,0],
-                'marks':[90,70,100,50,0,0],
-                'package':[10,7,14,5,0,0]}
-student= pd.DataFrame(student_dict, columns=['name','iq','marks','package'])
-student.set_index('name', inplace=True)
+# movies= pd.read_csv(r"C:\Users\City Computer\Desktop\VS\python\ImportedLibraries\movies.csv")
+# ipl = pd.read_csv(r"C:\Users\City Computer\Desktop\VS\python\ImportedLibraries\ipl-matches.csv")
+# student_dict = {'name':['a','b','c','d','e','f'],
+#                 'iq':[100,80,120,70,0,0],
+#                 'marks':[90,70,100,50,0,0],
+#                 'package':[10,7,14,5,0,0]}
+# student= pd.DataFrame(student_dict, columns=['name','iq','marks','package'])
+# student.set_index('name', inplace=True)
 
 # print(movies)
 # print(movies.describe())
@@ -113,3 +113,27 @@ student.set_index('name', inplace=True)
 #->2 toss decision
 # ipl['TossDecision'].value_counts().plot(kind='pie')
 # plt.show()
+
+
+###GROUPBYDATA
+#->find top3 genre by total earning
+movies = pd.read_csv(r'C:\Users\City Computer\Desktop\VS\python\ImportedLibraries\imdb-top-1000.csv')
+# print(movies.columns)
+# print(movies.groupby('Genre').sum()['Gross'].sort_values(ascending=False).head(3))
+#2-> find the genre based on highest average imbd rating
+# print(movies.groupby('Genre')['IMDB_Rating'].mean().sort_values(ascending=False).head(1))
+#->3 find director with more popularity
+# print(movies.groupby('Director')['No_of_Votes'].sum().sort_values(ascending = False).head(1))
+#->4 find highest rated movie of each genre
+# movies.groupby('genre')['IMDB_Rating','']sort_values later.....
+#->5 no of done by by each actor
+# print(movies.columns)
+# movies['Star1'].value_counts()
+# print(movies.columns)
+# movies.groupby('Star1')['Series_Title'].count.sort_value(ascending = False)
+# groupby -> desired coulumn -> aggregate (sum etc)
+
+#looping on groups
+genres = movies.groupby('Genre')
+for groups, data in genres:
+    print(type(groups), type(data))
